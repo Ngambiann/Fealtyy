@@ -41,7 +41,7 @@ class _LandingState extends State<Landing> {
               children: [
                 //Signup button
                 Landingpagebuttons(
-                    onpressed: () {
+                    onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const Signup()));
                     },
@@ -49,7 +49,7 @@ class _LandingState extends State<Landing> {
                 const SizedBox(width: 50),
                 //Login button
                 Landingpagebuttons(
-                    onpressed: () {
+                    onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const Login()));
                     },

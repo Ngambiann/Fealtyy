@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class Authpgsbuttons extends StatelessWidget {
   final String buttonname;
-  // ignore: prefer_typing_uninitialized_variables
-  final onPressed;
+  final VoidCallback onPressed;
   const Authpgsbuttons(
       {super.key, required this.buttonname, required this.onPressed});
 
