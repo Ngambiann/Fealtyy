@@ -16,6 +16,7 @@ class _SignupState extends State<Signup> {
   final TextEditingController nameController = TextEditingController();
   final TextEditingController emailAddressController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  final TextEditingController confirmpasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +57,12 @@ class _SignupState extends State<Signup> {
                 Authtextfields(
                   controller: passwordController,
                   hintText: "Password",
+                ),
+                 const SizedBox(height: 25),
+                //confirmPassword entry box
+                Authtextfields(
+                  controller: confirmpasswordController,
+                  hintText: "Confirm Password",
                 ),
                 const SizedBox(height: 35),
                 //Send code button
