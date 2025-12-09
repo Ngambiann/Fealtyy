@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 
 
-class Accountsetup extends StatefulWidget {
-  const Accountsetup({super.key});
+class PropertySetup extends StatefulWidget {
+  const PropertySetup({super.key});
 
   @override
-  State<Accountsetup> createState() => _AccountsetupState();
+  State<PropertySetup> createState() => _AccountsetupState();
 }
 
-class _AccountsetupState extends State<Accountsetup> {
+class _AccountsetupState extends State<PropertySetup> {
   final TextEditingController propertyNameController = TextEditingController();
   final TextEditingController propertyCapacityController =
       TextEditingController();
@@ -24,7 +24,7 @@ class _AccountsetupState extends State<Accountsetup> {
         padding: const EdgeInsets.all(20),
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/backgroundart2.png"),
+            image: AssetImage("assets/images/backgroundUp.png"),
             fit: BoxFit.cover,
           ),
         ),

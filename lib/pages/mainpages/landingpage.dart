@@ -17,7 +17,7 @@ class _LandingState extends State<Landing> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Container(
-//logo image
+      //logo image
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/Fealty.png"),

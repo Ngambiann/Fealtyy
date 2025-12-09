@@ -34,7 +34,7 @@ class _AuthcodeState extends State<Authcode> {
         padding: const EdgeInsets.all(20),
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/backgroundart2.png"),
+            image: AssetImage("assets/images/backgroundArt.png"),
             fit: BoxFit.cover,
           ),
         ),
