@@ -11,7 +11,7 @@ class Authtextfields extends StatelessWidget {
     decoration: InputDecoration(
       hintStyle: const TextStyle(color: Colors.black87),
       hintText: hintText,
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(17)),
     ),
       controller: controller,
     );

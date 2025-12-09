@@ -1,6 +1,6 @@
 import 'package:fealty_app/components/buttons/authpgsbuttons.dart';
 import 'package:fealty_app/components/texts/authtexts.dart';
-import 'package:fealty_app/pages/mainpages/homepage.dart';
+import 'package:fealty_app/pages/setuppages/property_setup.dart';
 import 'package:flutter/material.dart';
 
 class Authcode extends StatefulWidget {
@@ -87,7 +87,7 @@ class _AuthcodeState extends State<Authcode> {
                   buttonname: "Continue",
                   onPressed: () {
                     Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => const Homepage()),
+                      MaterialPageRoute(builder: (context) => const PropertySetup()),
                     );
                   },
                 ),
