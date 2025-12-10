@@ -3,6 +3,7 @@ import 'package:fealty_app/components/buttons/landingpagebuttons.dart';
 import 'package:fealty_app/pages/authpages/login.dart';
 import 'package:fealty_app/pages/authpages/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -28,14 +29,13 @@ class _LandingState extends State<Landing> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             //Slogan text
-            const Text(
+            Text(
               '"Loyalty in property management"',
               style: TextStyle(
-                  fontSize: 23,
-                  fontFamily: "inria Sans",
+                  fontSize: 23.sp,
                   fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 50),
+            SizedBox(height: 50.h),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -46,7 +46,7 @@ class _LandingState extends State<Landing> {
                           builder: (context) => const Signup()));
                     },
                     buttonname: "Sign up"),
-                const SizedBox(width: 50),
+                SizedBox(width: 50.w),
                 //Login button
                 Landingpagebuttons(
                     onPressed: () {
@@ -56,7 +56,7 @@ class _LandingState extends State<Landing> {
                     buttonname: "Login")
               ],
             ),
-          const SizedBox(height: 50),
+         SizedBox(height: 50.h),
           ],
         ),
       ),

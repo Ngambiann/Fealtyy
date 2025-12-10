@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SetupHeaders extends StatelessWidget {
   final String textcontent;
@@ -9,9 +10,9 @@ class SetupHeaders extends StatelessWidget {
     return Text(
       textcontent,
       textAlign: TextAlign.left,
-      style: const TextStyle(
+      style:  TextStyle(
         color: Colors.black,
-        fontSize: 35,
+        fontSize: 35.sp,
         fontWeight: FontWeight.bold,
       ),
     );
@@ -26,9 +27,9 @@ class SetupFieldname extends StatelessWidget {
     return Text(
       textcontent,
       textAlign: TextAlign.left,
-      style: const TextStyle(
+      style:TextStyle(
         color: Colors.black87,
-        fontSize: 20,
+        fontSize: 20.sp,
         fontWeight: FontWeight.w600,
       ),
     );

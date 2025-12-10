@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SmallCards extends StatelessWidget {
   final String cardTitle;
@@ -31,10 +32,10 @@ class SmallCards extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 12),
-          const Text(
+          SizedBox(height: 12.h),
+          Text(
             'Details go here',
-            style: TextStyle(color: Colors.black54, fontSize: 14),
+            style: TextStyle(color: Colors.black54, fontSize: 14.sp),
           ),
         ],
       ),

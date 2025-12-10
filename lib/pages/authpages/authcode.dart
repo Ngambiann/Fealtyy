@@ -2,6 +2,7 @@ import 'package:fealty_app/components/buttons/authpgsbuttons.dart';
 import 'package:fealty_app/components/texts/authtexts.dart';
 import 'package:fealty_app/pages/setuppages/property_setup.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Authcode extends StatefulWidget {
   const Authcode({super.key});
@@ -45,15 +46,15 @@ class _AuthcodeState extends State<Authcode> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 100),
+                SizedBox(height: 100.h),
                 const Authheaders(textcontent: "Enter code:"),
-                const SizedBox(height: 50),
+                SizedBox(height: 50.h),
                 //code boxes
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: List.generate(5, (index) {
                     return SizedBox(
-                      width: 50,
+                      width: 50.w,
                       child: TextField(
                         controller: controllers[index],
                         focusNode: focusNodes[index],
@@ -82,7 +83,7 @@ class _AuthcodeState extends State<Authcode> {
                     );
                   }),
                 ),
-                const SizedBox(height: 50),
+                 SizedBox(height: 50.h),
                 Authpgsbuttons(
                   buttonname: "Continue",
                   onPressed: () {

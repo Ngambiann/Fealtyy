@@ -4,6 +4,7 @@ import 'package:fealty_app/components/texts/authtexts.dart';
 import 'package:fealty_app/pages/authpages/authcode.dart';
 import 'package:fealty_app/pages/authpages/signup.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -40,19 +41,19 @@ class _LoginState extends State<Login> {
                     Authheaders(textcontent: "Back!"),
                   ],
                 ),
-                const SizedBox(height: 130),
+                SizedBox(height: 130.h),
                 //Email entry box
                 Authtextfields(
                   controller: emailAddressController,
                   hintText: "Email address",
                 ),
-                const SizedBox(height: 25),
+                SizedBox(height: 25.h),
                 //Password entry box
                 Authtextfields(
                   controller: passwordController,
                   hintText: "Password",
                 ),
-                const SizedBox(height: 55),
+                SizedBox(height: 55.h),
                 //Send code button
                 Authpgsbuttons(
                   buttonname: "Send code",
@@ -62,7 +63,7 @@ class _LoginState extends State<Login> {
                     );
                   },
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 10.h),
                 //Sign up option
                 Routingtexts(
                   actiontext: "Signup",

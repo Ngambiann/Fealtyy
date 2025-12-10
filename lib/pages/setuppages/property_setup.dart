@@ -4,6 +4,7 @@ import 'package:fealty_app/components/textfields/setuptextfields.dart';
 import 'package:fealty_app/components/texts/setuptexts.dart';
 import 'package:fealty_app/pages/setuppages/property_units.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PropertySetup extends StatefulWidget {
   const PropertySetup({super.key});
@@ -27,7 +28,7 @@ class _AccountsetupState extends State<PropertySetup> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(8),
         child: ListView(
           children: [
             Column(
@@ -37,21 +38,21 @@ class _AccountsetupState extends State<PropertySetup> {
                 SetupHeaders(
                   textcontent: "Add your first property to get started:",
                 ),
-                const SizedBox(height: 55),
+            SizedBox(height: 55.h),
                 //Property name field
                 SetupFieldname(textcontent: "Property Name/Nickname"),
                 Setuptextfields(
                   controller: propertyNameController,
                   hintText: "eg.Taylor Apartments",
                 ),
-                const SizedBox(height: 55),
+                SizedBox(height: 55.h),
                 //location
                 SetupFieldname(textcontent: "Property Location"),
                 Setuptextfields(
                   controller: propertyLocationController,
                   hintText: "eg.Westlands,Nairobi",
                 ),
-                const SizedBox(height: 55),
+               SizedBox(height: 55.h),
                 //Property type
                 SetupFieldname(textcontent: "Property Type"),
                 DropdownTextField(
@@ -59,10 +60,10 @@ class _AccountsetupState extends State<PropertySetup> {
                   hintText: "Select property type",
                   items: propertyTypes,
                 ),
-                const SizedBox(height: 75),
+                SizedBox(height: 75.h),
                 Align(
                   alignment: Alignment.bottomRight,
-                  child: Setupbuttons(
+                  child: ContinueButton(
                     onPressed: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(

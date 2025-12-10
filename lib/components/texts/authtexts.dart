@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Authheaders extends StatelessWidget {
   final String textcontent;
@@ -9,9 +10,9 @@ class Authheaders extends StatelessWidget {
     return Text(
       textAlign: TextAlign.start,
       textcontent,
-      style: const TextStyle(
+      style: TextStyle(
         color: Colors.black87,
-        fontSize: 51,
+        fontSize: 51.sp,
         fontWeight: FontWeight.bold,
       ),
     );

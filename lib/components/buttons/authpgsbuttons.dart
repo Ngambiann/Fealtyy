@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Authpgsbuttons extends StatelessWidget {
   final String buttonname;
@@ -15,8 +16,8 @@ class Authpgsbuttons extends StatelessWidget {
       onPressed: onPressed,
       child: Text(
         buttonname,
-        style: const TextStyle(
-            color: Colors.black87, fontSize: 25, fontWeight: FontWeight.w500),
+        style:TextStyle(
+            color: Colors.black87, fontSize: 25.sp, fontWeight: FontWeight.w500),
       ),
     );
   }
