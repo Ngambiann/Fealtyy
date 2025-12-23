@@ -30,7 +30,7 @@ class Previousbutton extends StatelessWidget {
   const Previousbutton({
     super.key,
     required this.onPressed,
-    required this.buttonname
+    required this.buttonname,
   });
 
   @override
@@ -43,6 +43,39 @@ class Previousbutton extends StatelessWidget {
         ),
       ),
       child: Text(buttonname, style: const TextStyle(color: Colors.black)),
+    );
+  }
+}
+
+class Paymentoptions extends StatelessWidget {
+  final String buttonname;
+  final VoidCallback onPressed;
+  const Paymentoptions({
+    super.key,
+    required this.onPressed,
+    required this.buttonname,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 332,
+      height: 102,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style:ButtonStyle(
+          backgroundColor: WidgetStatePropertyAll(
+            Color.fromARGB(255, 155, 209, 203),
+          ),
+          shape: WidgetStatePropertyAll(
+  RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(10),
+  ),
+),
+        ),
+        
+        child: Text(buttonname, style: const TextStyle(color: Colors.black,fontSize:25 )),
+      ),
     );
   }
 }
