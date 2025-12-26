@@ -3,6 +3,7 @@ import 'package:fealty_app/components/texts/setuptexts.dart';
 import 'package:fealty_app/pages/setuppages/payment_tracking.dart';
 import 'package:fealty_app/pages/setuppages/property_setup.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PropertyUnits extends StatefulWidget {
   const PropertyUnits({super.key});
@@ -21,7 +22,10 @@ class _PropertyUnitsState extends State<PropertyUnits> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //Header text
-            SetupHeaders(textcontent: "Set property floors and units:"),
+            SetupHeaders(textcontent: "Set property layout:"),
+            SizedBox(height: 55.h),
+
+            SizedBox(height: 75.h),
             Row(
               children: [
                 Previousbutton(

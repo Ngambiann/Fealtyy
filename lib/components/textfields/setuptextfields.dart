@@ -1,3 +1,4 @@
+import 'package:fealty_app/components/texts/setuptexts.dart';
 import 'package:flutter/material.dart';
 
 class Setuptextfields extends StatelessWidget {
@@ -22,6 +23,24 @@ class Setuptextfields extends StatelessWidget {
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(17)),
       ),
       controller: controller,
+    );
+  }
+}
+class Floornumber extends StatelessWidget {
+  final String relevantqtn;
+  final TextEditingController numberofBdrmsflrs; 
+  const Floornumber({super.key,required this.relevantqtn,required this.numberofBdrmsflrs});
+
+  @override
+  Widget build(BuildContext context) {
+    return  Row(
+      children: [
+        SetupFieldname(textcontent: relevantqtn),
+        TextField(
+          controller:numberofBdrmsflrs,
+          
+        )
+      ],
     );
   }
 }
